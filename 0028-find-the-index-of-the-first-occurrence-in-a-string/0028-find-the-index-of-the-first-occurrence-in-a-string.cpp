@@ -1,0 +1,12 @@
+class Solution {
+public:
+    int strStr(string haystack, string needle) {
+        if (needle.empty())
+            return 0;
+        size_t pos = haystack.find(needle);
+        if (pos != std::string::npos)
+            return static_cast<int>(pos);
+        else
+            return -1;
+    }
+};
