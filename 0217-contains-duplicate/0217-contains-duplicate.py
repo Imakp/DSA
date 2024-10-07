@@ -1,6 +1,7 @@
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         s = set()
+        nums.sort()
         for num in nums:
             if num in s:
                 return True
